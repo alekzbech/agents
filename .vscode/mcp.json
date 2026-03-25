@@ -1,4 +1,12 @@
 {
+  "inputs": [
+    {
+      "id": "atlassian-token",
+      "type": "promptString",
+      "description": "Atlassian API Token",
+      "password": true
+    }
+  ],
   "servers": {
     "jira": {
       "type": "stdio",
@@ -6,8 +14,8 @@
       "args": ["-y", "@aashari/mcp-server-atlassian-jira"],
       "env": {
         "ATLASSIAN_SITE_NAME": "headstart",
-        "ATLASSIAN_USER_EMAIL": "${env:JIRA_EMAIL}",
-        "ATLASSIAN_API_TOKEN": "${env:JIRA_API_TOKEN}"
+        "ATLASSIAN_USER_EMAIL": "aleksandra.bech@tsh.io",
+        "ATLASSIAN_API_TOKEN": "${input:atlassian-token}"
       }
     }
   }
