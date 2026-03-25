@@ -1,13 +1,13 @@
 {
   "servers": {
-    "atlassian": {
+    "jira": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-server-atlassian"],
+      "args": ["-y", "@aashari/mcp-server-atlassian-jira"],
       "env": {
-        "JIRA_URL": "${env:JIRA_URL}",
-        "JIRA_EMAIL": "${env:JIRA_EMAIL}",
-        "JIRA_API_TOKEN": "${env:JIRA_API_TOKEN}"
+        "ATLASSIAN_SITE_NAME": "headstart",
+        "ATLASSIAN_USER_EMAIL": "${env:JIRA_EMAIL}",
+        "ATLASSIAN_API_TOKEN": "${env:JIRA_API_TOKEN}"
       }
     }
   }
