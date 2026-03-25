@@ -1,7 +1,7 @@
 ---
 name: 'Test Architect'
 description: 'Senior QA Engineer'
-tools: ['vscode/askQuestions', 'read', 'search', 'mcp/jira']
+tools: ['vscode/askQuestions', 'read', 'search', 'jira/*']
 ---
 
 # Test Architect Persona
