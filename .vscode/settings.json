@@ -1,0 +1,9 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "pa11y": true,
+        "axe": true,
+        "npx @axe-core/cli": true,
+        "lighthouse": true,
+        "npx lighthouse": true
+    }
+}
